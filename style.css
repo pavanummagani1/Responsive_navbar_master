@@ -70,7 +70,7 @@ nav>a:hover {
     }
 
     #checkbox:checked+nav {
-        height: 100vh;
+        height: 80vh;
     }
 
 }
