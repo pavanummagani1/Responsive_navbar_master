@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+.contact {
+    background-color: lightcoral;
+    padding: 5px;
+}
+
+nav>a:hover {
+    background-color: lightcoral;
+}
+
+.hamburger {
+    font-size: 1.5em;
+    color: #fff;
+    display: none;
+}
+
+#checkbox {
+    display: none;
+}
+
+@media screen and (max-width:550px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #000;
+        position: absolute;
+        right: 0px;
+        top: 10.9vh;
+        width: 50vw;
+        height: 0vh;
+        overflow: hidden;
+        transition: height 0.6s ease;
+    }
+
+    #checkbox:checked+nav {
+        height: 100vh;
+    }
+
+}
